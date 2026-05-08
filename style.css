@@ -90,13 +90,18 @@ section {
     margin: 15px 0;
 }
 
-/* Image */
+/* Image - Optimized for high visibility and "upscale" clarity */
 .main-mockup {
-    width: 100%;
+    width: calc(100% + 40px); /* Stretches to fill the container's horizontal padding */
+    margin-left: -20px; /* Offset for the stretch */
     height: auto;
     display: block;
-    margin: 20px auto;
-    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 0; /* Remove radius for edge-to-edge look */
+    image-rendering: -webkit-optimize-contrast; /* Sharpens the image rendering */
+    image-rendering: crisp-edges;
+    transform: scale(1.05); /* Slight upscale for emphasis */
 }
 
 /* Buttons */
